@@ -1,13 +1,14 @@
-def main ():
-    numero = input ("Numero: ")
-    longitud = len(numero)
+def init():
+    n = int(input("Ingrese el número n: "))
+    strng = ""
 
-    salida = ""
+    for i in range(0, n):
+        for j in range(0, n):
+            strng += "*"
+        strng += "\n"
 
-    for i in range(0, longitud):
-        salida += numero[(longitud - 1) - i]
 
-    print ("El numero es: " + salida)
+    print(strng)
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    init()
